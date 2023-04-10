@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  /* font-family: "Lexend Deca", sans-serif; */
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.container {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  background-color: hsl(233, 47%, 7%);
+  position: relative;
+}
+
+.card-container {
+  max-width: 100rem;
+  background-color: hsl(244, 38%, 16%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card-text-box {
+  padding: 6rem 8rem 6rem 6rem;
+}
+
+.heading-primary {
+  font-size: 3.3rem;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+  letter-spacing: -0.075px;
+}
+.heading-primary span {
+  color: hsl(277, 64%, 61%);
+}
+
+.card-description {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 8rem;
+}
+
+.card-stats-box {
+  display: flex;
+  gap: 8rem;
+}
+
+.card-stats-main {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-stats-sub {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.card-img-box {
+  background-image: linear-gradient(
+      rgba(117, 9, 184, 0.35),
+      rgba(117, 9, 184, 0.35)
+    ),
+    url(./images/image-header-desktop.jpg);
+  background-size: cover;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a:link,
+.attribution a:visited {
+  display: inline-block;
+  color: hsl(277, 64%, 61%);
+  transition: all 0.3s;
+}
+
+.attribution a:hover,
+.attribution a:active {
+  color: inherit;
+  transform: translateY(-2px);
+}
+
+.attribution a:focus {
+  transform: translateY(1px);
+}
+
+/* 375px FOR MOBILE */
+
+@media (max-width: 23.4375em) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    padding: 8rem 2rem;
+  }
+  .card-container {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+
+  .card-text-box {
+    padding: 5rem 4rem;
+  }
+
+  .heading-primary {
+    font-size: 3.7rem;
+    margin-bottom: 3rem;
+  }
+
+  .card-description {
+    font-size: 2rem;
+  }
+
+  .card-img-box {
+    grid-row: 1;
+    height: 30rem;
+    background-image: linear-gradient(
+        rgba(117, 9, 184, 0.35),
+        rgba(117, 9, 184, 0.35)
+      ),
+      url(./images/image-header-mobile.jpg);
+    background-size: cover;
+  }
+
+  .card-stats-box {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
