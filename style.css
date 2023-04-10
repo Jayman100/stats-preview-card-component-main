@@ -114,6 +114,7 @@ body {
   .card-container {
     text-align: center;
     grid-template-columns: 1fr;
+    border-radius: 11px;
   }
 
   .card-text-box {
